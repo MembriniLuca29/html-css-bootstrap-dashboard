@@ -92,6 +92,7 @@ button{
     min-width:110px ;
     background-image: url("../img/sidebar-bg.png");
     background-color: black;
+
 }
 
 .top-left-bar{
@@ -156,6 +157,12 @@ h5{
 }
 
 
+.mycol-4{
+    width: calc((100% /12) *4);
+    
+}
+
+
 
 /* media Querry */
 
@@ -215,13 +222,23 @@ h5{
 
     .mobile100{
         min-width: calc((100% /12) *12);
+        margin-left: 10px;
     }
 
     .classi{
-        max-width: calc((100% /12) *4);
+        max-width: calc((100% /12) *3);
     }
     .myaction{
-        min-width: calc((100% /12) *8);
+        min-width: calc((100% /12) *9);
+    }
+
+    .tablet-wrap{
+        flex-wrap: wrap;
+    }
+
+    .mycol-4{
+        min-width: calc((100% /12) *12);
+        margin-left: 30px;
     }
 }
 
