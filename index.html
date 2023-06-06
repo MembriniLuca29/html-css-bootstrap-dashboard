@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Bootstrap Dashboard</title>
 </head>
+
 <body>
   <header>
     <nav class="navbar bg-body-tertiary">
@@ -31,9 +32,6 @@
               <li><a class="dropdown-item" href="#">Logout</a></li>
             </ul>
           </div>
-
-
-
         </form>
       </div>
     </nav>
@@ -43,13 +41,11 @@
 
     <div class="left-bar">
       <div class="top-left-bar h-25 d-flex">
-
         <div class="py-2">
           <div class="d-flex py-2 white-hover"><a href="" class="text-white text-decoration-none d-flex  "><i class="fa-solid  fa-house"></i> <h6 class="text-white ps-3 ">Home</h6></a></div>
           <div class="d-flex py-2 white-hover"><a href="" class="text-white text-decoration-none d-flex  "><i class="fa-solid  fa-chart-simple"></i>  <h6 class="text-white ps-3 ">Stats</h6></a></div>
           <div class="d-flex py-2 white-hover"><a href="" class="text-white text-decoration-none d-flex  "><i class="fa-solid  fa-signal"></i> <h6 class="text-white ps-3 ">Signal</h6></a></div>
         </div>
-
       </div>
       <div class="bottom-left-bar h-75 d-flex align-items-end justify-content-center ">
         <div class="d-flex px-2 white-hover"><a href="" class="text-white text-decoration-none "><i class="fa-solid fa-gear"></i></a><h6 class="text-white ps-3 ">Admin</h6></div>
@@ -57,18 +53,13 @@
     </div>
 
   <main>
-
     <!-- MAIN HEADER -->
-
-    <div class=" background-blu container-fluid mobile-wrap">
-
+    <div class=" background-blu  mobile-wrap col-12">
       <div class="col-6 mobile-column">
-
         <div class=" d-flex align-items-center pt-3 ps-2">
           <h3 class="text-white">Boolean</h3>
           <span class="badge rounded-pill mx-2 ">Piano blaze</span>
         </div>
-
         <div class="pb-4 ">
           <span class="badge rounded-pill mx-2 ">3 App </span> <i class="fa-solid fa-angles-right text-white"></i>
           <span class="badge rounded-pill mx-2 desktop-none "><i class="fa-solid fa-plus text-white"></i></span>
@@ -76,19 +67,15 @@
           <span class="badge rounded-pill mx-2 tablet-none ">Boolean web app</span>
           <span class="badge rounded-pill mx-2 tablet-none ">Boolean blog app</span>
         </div>
-
       </div>
-
       <div class="col-3 text-white pt-4 mobile-column ">
         <h5>Studenti online negl ultimi 30 minuti</h5>
         <h3>125</h3>
       </div>
-
       <div class="col-3 pt-4 pb-3 d-flex  mobile-column justify-content-center">
         <h5 class="text-white pe-4">Nuovo studente</h5>
 
         <!-- OFFCANVAS -->
-
         <button class="btn btn-primary plus-offcanvas" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
           <i class="fa-solid fa-plus text-white "></i></button>
 
@@ -159,28 +146,22 @@
             </div>
           </form>
         </div>
-
       </div>
-
       <!--  TERMINE OFFVANVAS   -->
     </div>
-
     <!-- TERMINE MAIN HEADER INIZIO MAIN CENTRALE -->
-
-    <div class="container-fluid d-flex">
-
+    <div class=" d-flex col-12 tablet-wrap">
       <!-- parte sinistra -->
       <div class="col-8 mobile100">
-
         <ul class="list-group list-group-flush border m-3 p-1">
           <li class="list-group-item"><h3>Prossime classi</h3></li>
-          <li class="list-group-item"><div class="d-flex justify-content-between classi">
-            <div >nome</div>
-            <div class="d-flex justify-content-around list-right col-6 align-items-center my-action">
+          <li class="list-group-item"><div class="d-flex justify-content-between ">
+            <div class="ps3 classi">nome</div>
+            <div class="d-flex justify-content-around list-right col-6 align-items-center myaction ">
               <div class="start-date col-4">Data inizio</div>
               <div class="roi col-2">ROI</div>
               <div class="state col-2">stato</div>
-              <div class="action d-flex align-items-center justify-content-center col-4">azione</div>
+              <div class="action d-flex align-items-center  justify-content-center col-4">azione</div>
             </div>
           </div></li>
           <li class="list-group-item"><div class="d-flex justify-content-between align-items-center">
@@ -303,12 +284,9 @@
               </div>
             </div>
           </div></li>
-          
-   
         </ul>
 
         <!-- FAQ -->
-
         <div class="accordion m-3 p-1" id="accordionExample">
           <div class="accordion-item p-2 d-flex align-items-center"><h3>F.A.Q.</h3></div>
           <div class="accordion-item">
@@ -348,16 +326,43 @@
             </div>
           </div>
         </div>
-
-      <!-- parte destra -->
-      <div class="col-4">
-
-      </div>
     </div>
 
-
-
-
+      <!-- parte destra -->
+      <div class="col mt-3 pe-3 mycol-4">
+        <ul class="list-group mobile-100 ">
+          <li class="list-group-item">Todo</li>
+          <li class="list-group-item">
+            <ul class="list-group">
+              <li class="list-group-item"> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">kickoff nuove classi</label>
+              </li>
+              <li class="list-group-item"> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">Lezione su boostrap 5 in classe #75</label>
+              </li>
+              <li class="list-group-item"> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault"> Controllare username github studenti</label>
+              </li>
+            </ul>
+          </li>
+        </ul>
+          <!--  parte destra grafico -->
+        <div class="card w-100 mt-3 mb-5" style="width: 18rem;">
+          <img src="img/stats.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title bold">Utenti attivi</h4>
+            <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Gennaio: 1200</li>
+            <li class="list-group-item">Febbraio: 800</li>
+            <li class="list-group-item">Marzo: 1500</li>
+          </ul>
+          <div class="card-body">
+            <a href="#" class="card-link">Visualizza report approfondito</a>
+          </div>
+        </div>
+      </div>
   </main>
 
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
