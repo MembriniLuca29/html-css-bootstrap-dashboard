@@ -83,6 +83,7 @@ button{
 height: 100vh;
 position: fixed;
 width: max-content;
+min-width:110px ;
 }
 
 .top-left-bar{
@@ -97,9 +98,46 @@ width: max-content;
     padding-bottom: 60px;
 }
 
+/* MAIN */
+
+main{
+    margin-left: 110px;
+}
+
+.background-blu{
+    background-color: #1B72E8;
+}
+
+.badge{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.desktop-none{
+    display: none;
+}
+
+h5{
+    font-size: 1rem;
+}
+
+.plus-offcanvas{
+    border: 1px solid white;
+}
+
+.offcanvas.offcanvas-end{
+    width: 50%;
+    overflow: auto;
+}
+
 
 
 /* media Querry */
+
+@media screen and (max-width: 1024px){
+    .offcanvas.offcanvas-end{
+        width: 100%;
+    }
+}
 
 @media screen and (max-width: 768px) {
     
@@ -121,7 +159,23 @@ width: max-content;
         flex-wrap: nowrap;
     }
 
+    .left-bar{
+        min-width:0px ;
+    }
+
     h6{
         display: none;
+    }
+
+    main{
+    margin-left: 30px;
+    }
+
+    .tablet-none{
+        display: none;
+    }
+
+    .desktop-none{
+        display: inline;
     }
 }
