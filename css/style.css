@@ -22,6 +22,11 @@
     display: none;
 }
 
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
 
 .fa-bell{
     color: goldenrod;
@@ -80,32 +85,38 @@ button{
 /* barra laterale */
 
 .left-bar{
-height: 100vh;
-position: fixed;
-width: max-content;
-min-width:110px ;
+    margin-top: 50px;
+    height: 100vh;
+    position: fixed;
+    width: max-content;
+    min-width:110px ;
+    background-image: url("../img/sidebar-bg.png");
+    background-color: black;
 }
 
 .top-left-bar{
     padding: 2vh 2vh;
-    background-color: #13293F;
    
 }
 
 .bottom-left-bar{
-    background-color:#0B2339;
-  
+
     padding-bottom: 60px;
 }
 
+.white-hover:hover{
+    background-color: rgb(131, 131, 131);
+}
 /* MAIN */
 
 main{
     margin-left: 110px;
+    padding-top: 60px;
 }
 
 .background-blu{
     background-color: #1B72E8;
+    display: flex;
 }
 
 .badge{
@@ -122,11 +133,26 @@ h5{
 
 .plus-offcanvas{
     border: 1px solid white;
+    height: 2.5rem;
 }
 
 .offcanvas.offcanvas-end{
     width: 50%;
     overflow: auto;
+}
+
+
+/* tabella */
+
+.list-right>div{
+    padding: 0 2rem;
+}
+
+.color-orange{
+    background-color: #F26551;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    
 }
 
 
@@ -136,6 +162,10 @@ h5{
 @media screen and (max-width: 1024px){
     .offcanvas.offcanvas-end{
         width: 100%;
+    }
+
+    .background-blu{
+        padding-right: 3rem;
     }
 }
 
@@ -177,5 +207,44 @@ h5{
 
     .desktop-none{
         display: inline;
+    }
+
+    .background-blu{
+        padding-left: 2rem;
+    }
+
+    .mobile100{
+        min-width: calc((100% /12) *12);
+    }
+
+    .classi{
+        max-width: calc((100% /12) *4);
+    }
+    .myaction{
+        min-width: calc((100% /12) *8);
+    }
+}
+
+@media screen and (max-width:425px) {
+
+    .background-blu{
+        flex-direction: column;
+    }
+
+    .mobile-column{
+        min-width: calc((100% /12) *12);
+        padding: 1rem 0;
+    }
+
+    .background-blu :nth-child(1) { order: 2; }
+    .background-blu :nth-child(2) { order: 3; }
+    .background-blu :nth-child(3) { order: 1; }
+
+    .start-date{
+        display: none;
+    }
+
+    .roi{
+        display: none;
     }
 }
